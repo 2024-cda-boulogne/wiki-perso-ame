@@ -221,7 +221,12 @@ a {
   }
 
   .article-photo-container {
+    width: 30rem;
     margin-right: 3rem;
+  }
+
+  .article-photo {
+    width: 30rem;
   }
 
 
