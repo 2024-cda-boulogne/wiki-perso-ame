@@ -34,6 +34,7 @@ a {
 .main-container {
   position: relative;
   padding: 5rem 3rem;
+  text-align: justify;
 }
 
 /* header */
@@ -175,6 +176,6 @@ a {
 
   .main-container {
     position: relative;
-    padding: 5rem 10rem;
+    padding: 5rem 20rem;
   }
 }
