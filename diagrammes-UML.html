@@ -34,10 +34,48 @@
             objets du système interagissent les uns avec les autres. Pour en savoir plus sur les types de diagrammes
             UML,
             veuillez consulter le reste du contenu ci-dessous.</p>
-
-        <img class="article-photo" src="assets\UML.png" alt="Diagrammes UML" />
+        <div class="header-photo-container"> <img class="header-photo" src="assets\uml.jfif" alt="Diagrammes UML" />
+        </div>
 
         <h2 class="sub-title">Diagrammes de séquence</h2>
+        <div class="article-photo-container">
+            <img class="article-photo" src="assets\diagramme-sequence.png" alt="Diagramme de séquence" />
+            <div class="article-photo-caption">Exemple de diagramme de séquence d'un restaurant
+            </div>
+        </div>
+        <p>
+            Le diagramme de séquence permet de montrer les interactions d'objets dans le cadre d'un scénario d'un
+            diagramme des cas d'utilisation. Dans un souci de simplification, on représente l'acteur principal à gauche
+            du diagramme, et les acteurs secondaires éventuels à droite du système. Le but est de décrire comment se
+            déroulent les interactions entre les acteurs ou objets.
+        </p>
+        <p>
+            La dimension verticale du diagramme représente le temps, permettant de visualiser l'enchaînement des actions
+            dans le temps, et de spécifier la naissance et la mort d'objets. Les périodes d'activité des objets sont
+            symbolisées par des rectangles, et ces objets dialoguent à l'aide de messages.
+        </p>
+        <p>
+            Plusieurs types de messages (actions) peuvent transiter entre les acteurs et objets.
+        <ul>
+            <li><strong>message simple :</strong> le message n'a pas de spécificité particulière d'envoi et de
+                réception.</li>
+            <li><strong>message avec durée de vie :</strong> l'expéditeur attend une réponse du récepteur pendant un
+                certain temps et reprend
+                ses activités si aucune réponse n'a lieu dans un délai prévu.</li>
+            <li><strong> message synchrone :</strong> l'expéditeur est bloqué jusqu'au signal de prise en compte par le
+                destinataire. Les
+                messages synchrones sont symbolisés par des flèches barrées.</li>
+            <li><strong>message asynchrone :</strong> le message est envoyé, l'expéditeur continue son activité que le
+                message soit parvenu
+                ou pris en compte ou non. Les messages asynchrones sont symbolisés par des demi-flèches.</li>
+            <li><strong>message dérobant :</strong> le message est mis en attente dans une liste d'attente de traitement
+                chez le récepteur.</li>
+        </ul>
+        Le langage permet de décaler l'envoi et la réception des messages, pour montrer les délais de communication
+        non négligeables. La plupart des ateliers UML ne prennent cependant pas en compte cette spécificité.
+        </p>
+
+    </div>
 
 
 
