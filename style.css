@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: white;
+  background-color: rgb(172, 172, 172);
 }
 
 a {
@@ -36,7 +36,7 @@ a {
 }
 
 .sub-title {
-  margin-top: 3rem;
+  margin-top: 5rem;
   text-align: left;
   font-size: larger;
 }
@@ -48,8 +48,9 @@ a {
 
 .main-container {
   position: relative;
-  padding: 5rem 3rem;
+  padding: 5rem 2rem;
   text-align: justify;
+  background-color: white;
 }
 
 /* header */
@@ -169,12 +170,12 @@ a {
 }
 
 .article-photo-container {
-  width: 300px;
+  width: 20rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  float: left;
+  margin-inline: auto;
   margin-bottom: 2rem;
 }
 
@@ -217,12 +218,14 @@ a {
 
   .main-container {
     position: relative;
-    padding: 5rem 20rem;
+    margin: 2rem 15rem;
+    padding: 5rem 5rem;
   }
 
   .article-photo-container {
     width: 30rem;
     margin-right: 3rem;
+    float: left;
   }
 
   .article-photo {
