@@ -29,3 +29,7 @@ Object.keys(commandesGit).forEach(function (commande) {
     listItem.innerHTML += " - " + commandesGit[commande];
     commandesGitList.appendChild(listItem);
 });
+
+
+// Modales
+

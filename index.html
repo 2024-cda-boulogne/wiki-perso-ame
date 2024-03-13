@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Merlin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html" class="logo">Merlin Wiki</a>
+        <a href="index.html" class="logo">Merlin Wiki <span class="material-symbols-outlined">
+                psychology_alt
+            </span></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
@@ -20,8 +35,14 @@
             <li><a href="merise.html">MERISE</a></li>
         </ul>
     </header>
-
-    <div class="main-container">
+    <div class="banner-container">
+        <img class="banner-photo" alt="Merlin wiki, alexandre merlin"
+            src="assets\high-angle-shot-city-buildings-new-york-manhattan.jpg" />
+        <div class="text-overlay">
+            <p>LE Wiki tendance de 2024</p>
+        </div>
+    </div>
+    <main class="main-container">
 
         <div class="text-container">
             <img class="img-intro" src="assets\alexandre-merlin.png" alt="Alexandre Merlin" />
@@ -58,8 +79,40 @@
                 captivante !
             </p>
         </div>
-    </div>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Merlin Wiki</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="commandes-git.html">Commandes Git</a></li>
+                        <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
+                        <li><a href="merise.html">MERISE</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alexandre-merlin-82a395a8/"><img class="social-icon"
+                                alt="LinkedIn" src="assets\icons8-linkedin.svg" /></a>
+                        <a href="https://github.com/Merlinovitch"><img class="social-icon" alt="GitHub"
+                                src="assets\icons8-github.svg" /></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations légales</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
