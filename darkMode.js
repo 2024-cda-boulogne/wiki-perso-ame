@@ -3,31 +3,26 @@ const mainContainers = document.getElementsByClassName('main-container');
 let darkModeEnabled = localStorage.getItem('darkModeEnabled');
 const body = document.body;
 
+// Convertit la chaîne récupérée de localStorage en booléen
+darkModeEnabled = darkModeEnabled === 'true';
 
-if (darkModeEnabled === 'true') {
-    enableDarkMode();
+// Inverse la valeur de darkModeEnabled
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
+// Applique le mode sombre si darkModeEnabled est true
+if (darkModeEnabled) {
+    toggleDarkMode();
+    darkModeToggle.checked = true;
 }
 
 darkModeToggle.addEventListener('click', () => {
+    // Inverse la valeur de darkModeEnabled lors du clic
     darkModeEnabled = !darkModeEnabled;
-    if (darkModeEnabled) {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
+    console.log(darkModeEnabled);
+    // Met à jour le mode sombre
+    toggleDarkMode();
+    // Enregistre la nouvelle valeur de darkModeEnabled dans localStorage
     localStorage.setItem('darkModeEnabled', darkModeEnabled);
 });
-
-function enableDarkMode() {
-    body.classList.add('dark-mode');
-    for (let i = 0; i < mainContainers.length; i++) {
-        mainContainers[i].classList.add('dark-mode');
-    }
-}
-
-function disableDarkMode() {
-    body.classList.remove('dark-mode');
-    for (let i = 0; i < mainContainers.length; i++) {
-        mainContainers[i].classList.remove('dark-mode');
-    }
-}

@@ -18,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -33,9 +32,12 @@
             <li><a href="commandes-git.html">Commandes Git</a></li>
             <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
             <li><a href="merise.html">MERISE</a></li>
-            <li><button id="darkModeToggle"><span class="material-symbols-outlined">
-                        dark_mode
-                    </span></button></li>
+            <li>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeToggle" class="checkbox">
+                    <label for="darkModeToggle" class="slider"></label>
+                </div>
+            </li>
         </ul>
     </header>
     <div class="banner-container">
@@ -116,8 +118,8 @@
             </div>
         </div>
     </footer>
+
     <script src="darkMode.js"></script>
-    <script src="scripts.js"></script>
 </body>
 
 
