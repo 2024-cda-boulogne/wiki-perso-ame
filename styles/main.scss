@@ -1,5 +1,6 @@
 @use 'darkmode.scss';
 @use 'navbar.scss';
+@use 'index.scss';
 
 body {
     margin: 0;
@@ -15,4 +16,14 @@ h1 {
     color: rgb(27, 71, 71);
     font-family: Noto serif, serif;
     text-align: left;
+    font-size: xx-large;
+
+}
+
+.main-container {
+    position: relative;
+    margin: 0rem 15rem;
+    padding-inline: 4.5rem;
+    padding-block: 2rem;
+    box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.2);
 }

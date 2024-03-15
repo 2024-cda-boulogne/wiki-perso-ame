@@ -1,0 +1,27 @@
+.banner-photo {
+    object-fit: fill;
+    width: 100%;
+    height: 100vh;
+
+    top: 0;
+
+}
+
+
+.text-overlay {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+.img-intro {
+    float: left;
+    margin: 3rem;
+
+}
