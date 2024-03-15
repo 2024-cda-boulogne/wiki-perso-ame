@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        text-decoration: none;
+        font-family: Noto serif, serif;
+        font-size: xx-large;
+        font-weight: bold;
+        color: rgb(27, 71, 71);
+    }
+
+    #menu {
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    #darkMode {
+        display: flex;
+        align-items: center;
+        font-size: small;
+
+        .dark-mode-toggle {
+            margin-left: 0.5rem;
+        }
+    }
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Merlin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,25 +21,30 @@
 </head>
 
 <body>
-    <header class="header">
+
+    <nav role="navigation" class="navbar">
         <a href="index.html" class="logo">Merlin Wiki <span class="material-symbols-outlined">
                 psychology_alt
             </span></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="commandes-git.html">Commandes Git</a></li>
-            <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
-            <li><a href="merise.html">MERISE</a></li>
-            <li>
-                <div class="dark-mode-toggle">
-                    <input type="checkbox" id="darkModeToggle" class="checkbox">
-                    <label for="darkModeToggle" class="slider"></label>
-                </div>
-            </li>
-        </ul>
-    </header>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="commandes-git.html">Commandes Git</a></li>
+                <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
+                <li><a href="merise.html">MERISE</a></li>
+                <li id="darkMode">Mode sombre
+                    <div class="dark-mode-toggle">
+                        <input type="checkbox" id="darkModeToggle" class="checkbox">
+                        <label for="darkModeToggle" class="slider"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="banner-container">
         <img class="banner-photo" alt="Merlin wiki, alexandre merlin"
             src="assets\high-angle-shot-city-buildings-new-york-manhattan.jpg" />
