@@ -1,7 +1,5 @@
 
 
-// Modale
-
 const modal = document.getElementById("myModal");
 const images = document.getElementsByClassName("article-photo")
 const modalImg = document.getElementById("imgModal");

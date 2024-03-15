@@ -18,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -33,16 +32,19 @@
             <li><a href="commandes-git.html">Commandes Git</a></li>
             <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
             <li><a href="merise.html">MERISE</a></li>
-            <li><button id="darkModeToggle"><span class="material-symbols-outlined">
-                        dark_mode
-                    </span></button></li>
+            <li>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeToggle" class="checkbox">
+                    <label for="darkModeToggle" class="slider"></label>
+                </div>
+            </li>
         </ul>
     </header>
     <div class="banner-container">
         <img class="banner-photo" alt="Merlin wiki, alexandre merlin"
             src="assets\high-angle-shot-city-buildings-new-york-manhattan.jpg" />
         <div class="text-overlay">
-            <p>LE Wiki tendance de 2024</p>
+            <p>LE Wiki Tendance de 2024</p>
         </div>
     </div>
     <main class="main-container">
@@ -116,8 +118,8 @@
             </div>
         </div>
     </footer>
-    
-    <script src="scripts.js"></script>
+
+    <script src="darkMode.js"></script>
 </body>
 
 
