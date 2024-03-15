@@ -1,0 +1,62 @@
+.dark-mode {
+    &,
+    header,
+    .logo,
+    .menu,
+    .menu a {
+        background-color: #252525;
+        color: #fff;
+
+        .main-container {
+            background-color: #494949;
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+        }
+    }
+}
+
+
+.dark-mode-toggle {
+    position: relative;
+    width: 3.75rem;
+    height: 2.125rem;
+
+    .checkbox {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    }
+
+    .checkbox:checked+.slider {
+        background-color: #2196F3;
+
+        &:before {
+            transform: translateX(26px);
+        }
+    }
+}

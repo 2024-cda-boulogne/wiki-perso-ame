@@ -1,0 +1,62 @@
+.dark-mode,
+.dark-mode header,
+.dark-mode .logo,
+.dark-mode .menu,
+.dark-mode .menu a {
+  background-color: #252525;
+  color: #fff;
+}
+.dark-mode .main-container,
+.dark-mode header .main-container,
+.dark-mode .logo .main-container,
+.dark-mode .menu .main-container,
+.dark-mode .menu a .main-container {
+  background-color: #494949;
+  color: #fff;
+}
+.dark-mode h1,
+.dark-mode header h1,
+.dark-mode .logo h1,
+.dark-mode .menu h1,
+.dark-mode .menu a h1 {
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  position: relative;
+  width: 3.75rem;
+  height: 2.125rem;
+}
+.dark-mode-toggle .checkbox {
+  display: none;
+}
+.dark-mode-toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.dark-mode-toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.dark-mode-toggle .checkbox:checked + .slider {
+  background-color: #2196F3;
+}
+.dark-mode-toggle .checkbox:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/*# sourceMappingURL=main.css.map */
