@@ -1,0 +1,48 @@
+.article-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    &-container {
+        width: 20rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    &-caption {
+        padding: 10px;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 14px;
+    }
+
+}
+
+.sub-title {
+    font-family: Noto serif, serif;
+    margin-top: 3rem;
+    text-align: left;
+    font-size: larger;
+    color: rgb(27, 71, 71);
+}
+
+@media (min-width: 50em) {
+    .article-container {
+        clear: left;
+    }
+
+
+    .article-photo-container {
+        width: 30rem;
+        margin-right: 3rem;
+        float: left;
+    }
+
+    .article-photo {
+        width: 30rem;
+    }
+}
