@@ -22,6 +22,20 @@
 
 }
 
+
+
+.header-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &-container {
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+    }
+}
+
 .sub-title {
     font-family: Noto serif, serif;
     margin-top: 3rem;
@@ -31,18 +45,20 @@
 }
 
 @media (min-width: 50em) {
-    .article-container {
-        clear: left;
-    }
+    .article {
+        &-container {
+            clear: left;
+        }
 
+        &-photo {
+            width: 30rem;
+        }
 
-    .article-photo-container {
-        width: 30rem;
-        margin-right: 3rem;
-        float: left;
-    }
+        &-photo-container {
+            width: 30rem;
+            margin-right: 3rem;
+            float: left;
+        }
 
-    .article-photo {
-        width: 30rem;
     }
 }
