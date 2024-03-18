@@ -50,6 +50,7 @@
     .article {
         &-container {
             clear: left;
+            overflow-y: hidden;
         }
 
         &-photo {

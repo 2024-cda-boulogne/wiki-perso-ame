@@ -314,6 +314,7 @@
 @media (min-width: 50em) {
   .article-container {
     clear: left;
+    overflow-y: hidden;
   }
   .article-photo {
     width: 30rem;
