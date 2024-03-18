@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrammes UML | Alexandre Merlin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,22 +20,27 @@
 </head>
 
 <body>
-    <header class="header">
+    <section class="top-nav">
         <a href="index.html" class="logo">Merlin Wiki <span class="material-symbols-outlined">
                 psychology_alt
             </span></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="commandes-git.html">Commandes Git</a></li>
             <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
             <li><a href="merise.html">MERISE</a></li>
-            <li><button id="darkModeToggle"><span class="material-symbols-outlined">
-                        dark_mode
-                    </span></button></li>
+            <li id="darkMode">Mode sombre
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeToggle" class="checkbox">
+                    <label for="darkModeToggle" class="slider"></label>
+                </div>
+            </li>
         </ul>
-    </header>
+    </section>
     <main class="main-container">
 
         <h1 class="page-title">Diagrammes UML</h1>
@@ -223,8 +228,7 @@
         <section class="article-container">
             <h2 class="sub-title">Diagramme de classe</h2>
             <div class="article-photo-container">
-                <img class="article-photo" src="assets\diagramme-classe.png" alt="Diagramme de classe"
-                    />
+                <img class="article-photo" src="assets\diagramme-classe.png" alt="Diagramme de classe" />
                 <div class="article-photo-caption">Exemple de diagramme de classe
                 </div>
             </div>

@@ -21,36 +21,36 @@
 </head>
 
 <body>
-
-    <nav role="navigation" class="navbar">
+    <section class="top-nav">
         <a href="index.html" class="logo">Merlin Wiki <span class="material-symbols-outlined">
                 psychology_alt
             </span></a>
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="commandes-git.html">Commandes Git</a></li>
-                <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
-                <li><a href="merise.html">MERISE</a></li>
-                <li id="darkMode">Mode sombre
-                    <div class="dark-mode-toggle">
-                        <input type="checkbox" id="darkModeToggle" class="checkbox">
-                        <label for="darkModeToggle" class="slider"></label>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="commandes-git.html">Commandes Git</a></li>
+            <li><a href="diagrammes-UML.html">Diagrammes UML</a></li>
+            <li><a href="merise.html">MERISE</a></li>
+            <li id="darkMode">Mode sombre
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeToggle" class="checkbox">
+                    <label for="darkModeToggle" class="slider"></label>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
     <div class="banner-container">
-        <img class="banner-photo" alt="Merlin wiki, alexandre merlin"
-            src="assets\high-angle-shot-city-buildings-new-york-manhattan.jpg" />
         <div class="text-overlay">
             <p>LE Wiki Tendance de 2024</p>
         </div>
+        <img class="banner-photo" alt="Merlin wiki, alexandre merlin"
+            src="assets\high-angle-shot-city-buildings-new-york-manhattan.jpg" />
+
     </div>
     <main class="main-container">
 

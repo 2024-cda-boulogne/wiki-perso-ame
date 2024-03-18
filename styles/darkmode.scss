@@ -1,12 +1,12 @@
 .dark-mode {
 
     &,
-    .navbar {
+    .top-nav {
         background-color: #252525;
 
         .logo,
-        #menu,
-        #menu a {
+        .menu,
+        .menu a {
             color: #fff;
         }
     }
@@ -14,7 +14,12 @@
     .main-container {
         background-color: #494949;
         color: #fff;
+
+        h1 {
+            color: #fff;
+        }
     }
+
 }
 
 

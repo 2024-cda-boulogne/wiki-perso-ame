@@ -2,10 +2,12 @@
 @use 'navbar.scss';
 @use 'index.scss';
 @use 'footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
     font-family: Roboto, Helvetica, sans-serif;
+    text-align: justify;
     background-color: #f2f2f2;
 }
 
@@ -15,7 +17,7 @@ a {
 
 h1 {
     color: rgb(27, 71, 71);
-    font-family: Noto serif, serif;
+    font-family: "Noto Serif Display", serif;
     text-align: left;
     font-size: xx-large;
 
@@ -29,4 +31,14 @@ h1 {
     padding-top: 2rem;
     padding-bottom: 5REM;
     box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 950px) {
+
+    .main-container {
+        margin: 0rem 1rem;
+        padding-inline: 1rem;
+    }
+
+
 }
