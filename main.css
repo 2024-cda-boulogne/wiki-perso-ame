@@ -13,6 +13,14 @@
 .dark-mode .top-nav .menu a {
   color: #fff;
 }
+.dark-mode .logo svg,
+.dark-mode .top-nav .logo svg {
+  fill: #fff;
+}
+.dark-mode #menu-toggle:checked ~ .menu,
+.dark-mode .top-nav #menu-toggle:checked ~ .menu {
+  background-color: rgba(37, 37, 37, 0.9);
+}
 .dark-mode .main-container {
   background-color: #494949;
   color: #fff;
@@ -80,9 +88,11 @@
   display: flex;
   align-items: center;
 }
-.top-nav .logo .material-symbols-outlined {
-  margin-left: 5px;
-  font-size: 2rem;
+.top-nav .logo svg {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  fill: #000000;
 }
 .top-nav .menu {
   list-style-type: none;

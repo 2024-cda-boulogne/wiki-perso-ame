@@ -8,6 +8,19 @@
         .menu,
         .menu a {
             color: #fff;
+
+        }
+
+        .logo svg {
+            fill: #fff;
+        }
+
+        #menu-toggle {
+
+            &:checked~.menu {
+
+                background-color: rgba(37, 37, 37, 0.9);
+            }
         }
     }
 

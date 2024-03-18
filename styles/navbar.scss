@@ -20,9 +20,11 @@
         display: flex;
         align-items: center;
 
-        .material-symbols-outlined {
-            margin-left: 5px;
-            font-size: 2rem;
+        svg {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1rem;
+            fill: #000000;
         }
     }
 
